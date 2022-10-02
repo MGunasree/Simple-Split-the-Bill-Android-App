@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Split the bill app</string>
+    <string name="txtTitle">Bill Caring</string>
+    <string name="btn1">Click Hear</string>
+    <string name="imgDescription">img of splitting</string>
+    <string name="txtBill">Bill Total</string>
+    <string name="GroupNum">No of People</string>
+
+    <string-array name="spinQuality">
+        <item>Excellent</item>
+        <item>Average</item>
+        <item>Poor</item>
+
+    </string-array>
+    <string name="spinGroup">Select a rating</string>
+    <string name="txtResult">R</string>
+    <string name="btn2">Split the Bill</string>
+    <string name="tip">Tip amount</string>
+</resources>

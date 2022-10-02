@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen2">
+
+    <EditText
+        android:id="@+id/txtBill"
+        android:layout_width="271dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/txtBill"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinGroup"
+        android:layout_width="310dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="19dp"
+        android:entries="@array/spinQuality"
+        android:minHeight="48dp"
+        android:prompt="@string/spinGroup"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtGroup"
+        android:layout_width="271dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:hint="@string/GroupNum"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBill"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/txtResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/btn2"
+        app:layout_constraintBottom_toTopOf="@+id/txtResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tip"
+        android:layout_width="251dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/tip"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/spinGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
